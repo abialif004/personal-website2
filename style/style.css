@@ -102,7 +102,14 @@ body {
     opacity: 1;
   }
 }
-
+a{
+    text-decoration: none;
+    color: white;
+    transition: all .6s;
+}
+a:hover{
+    color: black;
+}
 .hello-title {
   font-size: 60px;
   font-style: bold;
@@ -182,8 +189,11 @@ span.developer {
 }
 .buttons {
   margin-top: 30px;
+
 }
 .download-cv {
+    letter-spacing: 1px;
+    font-family: 'Lato';
   color: white;
   background-color: black;
   border: 0px none;
@@ -194,6 +204,8 @@ span.developer {
 }
 
 .contact-us {
+    letter-spacing: 1px;
+    font-family: 'Lato';
   color: black;
   background-color: white;
   border: 1px solid black;
