@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700;900&display=swap');
+* {
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    scrollbar-width: 0;
+}
+::selection{
+    background-color: grey;
+    color: black;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+body{
+    background-color: #f7f7f7;
+}
+
+#header{
+    background-color: rgba(0, 0, 0, .5);
+    animation:  saturation-change 7s linear ;
+    background-blend-mode: darken;
+    flex-wrap: wrap;
+    max-height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    background-image: url('../images/header.jpg');
+    display: grid;
+    grid-row: 1/4;
+    border: 1px solid black;
+    filter: saturate(200%) ;
+}
+@keyframes background-fadeIn {
+    0%{
+        background-color: rgba(0, 0, 0, 1);
+    }
+    100%{
+        background-color: rgba(0, 0, 0, .6);
+    }
+    
+}
+@keyframes saturation-change {
+    0%{
+        filter:saturate(0%);
+        
+    }
+    50%{
+        filter: saturate(300%);
+        
+    }
+    100%{
+        filter: saturate(150%);
+        
+    }
+}
+.navigation-bar{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+}
+.logo{
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 400;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 20px;
+
+    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.navigation-elements{
+    font-weight: 100;
+    margin-right: 30px;
+    font-family: 'Poppins','sans-serif';
+    padding-top: 20px;
+    grid-template-columns: auto auto auto auto auto auto auto ;
+  
+    display: grid;
+  
+}
+.navigation-element{
+    color: #fff;
+    padding: 10px 20px
+}
+.head-title{
+   
+    animation: fade-In 4s linear ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 100px;
+}
+@keyframes fade-In {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.hello-title{
+
+    font-size: 60px;
+    font-style: bold;
+    font-family: 'Lato', cursive;
+    font-weight: 900;
+    color: white;
+}
+.second-title{
+    display: inline;
+    opacity: .7;
+    font-weight: 100;
+    font-size: 50px;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+span.developer{
+    font-size: 50px;
+    color: white;
+    font-family: 'Poppins', 'sans-serif';
+    opacity: 1;
+    font-weight: 500;
+    
+}
+
+/* Head Section Finished */
+
+
+
+
+#about-me{   
+    padding: 30px;
+    background-color: white;
+    padding-bottom: 70px;
+
+}
+
+.contents{
+    margin-top: 30px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: auto auto;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.myimage{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 220px;
+    background-image: url(../images/image.JPG);
+    filter: saturate(50%);
+}
+.my-description{
+    flex-grow: 1;
+    flex-shrink: 1;
+    grid-template-rows: auto auto;
+    display: flexbox;
+    flex-basis: 80%;  
+}
+.about-me{
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 25px;
+}
+.sub-title{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+.paragraph{
+    color: grey;
+    padding-top: 20px;
+    font-family: 'Lato';
+}
+.buttons{
+    margin-top: 30px;
+}
+.download-cv{
+    color: white;
+    background-color: black;
+    border: 0px none ;
+    border-radius: 5px;
+    padding: 15px;
+    width: 140px;
+    transition: transform .6s;
+
+}
+
+.contact-us{
+    color: black;
+    background-color: white;
+    border: 1px solid black ;
+    border-radius: 5px;
+    padding: 15px;
+    width: 140px;
+    transition: transform .6s;
+}
+
+.download-cv:hover , .contact-us:hover {
+    transform: translate(0, -10px);
+}
+.paragraph::first-letter{
+    font-size: 30px;
+}
