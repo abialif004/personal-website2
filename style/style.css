@@ -162,7 +162,7 @@ span.developer {
   background-repeat: no-repeat;
   height: 350px;
   width: 220px;
-  background-image: url('../images/image.jpg');
+  background-image: url('../images/image.JPG');
   filter: saturate(0%);
 }
 .my-description {
