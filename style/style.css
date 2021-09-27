@@ -167,7 +167,7 @@ span.developer{
     height: 350px;
     width: 220px;
     background-image: url(../images/image.JPG);
-    filter: saturate(50%);
+    filter: saturate(100%);
 }
 .my-description{
     flex-grow: 1;
